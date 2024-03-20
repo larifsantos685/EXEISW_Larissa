@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+    body { 
+        font-family: 'Poppins', sans-serif;
+        background-color: #f2f2f2
+    }
+        .azul {
+            color: #0433BF;
+        }
+
+        .vermelho {
+            color: #D9343A;
+        }
+
+        .aprovado { 
+            background-color: #618C37;
+            margin: solid #000;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+        }
+        .reprovado {
+            background-color: #D9343A;
+            border-radius: 5px;
+            color: #fff; 
+            text-align: center;
+        }
+        .numero_aprovados {
+            display: flex; 
+            margin-top: 10px;
+            justify-content: space-around;
+        }
+        h2 {
+            margin: 0 15px; 
+        }
+    
+
+        table {
+            border-radius: 10px;
+        }
+        .tabela_principal {
+        
+            margin: 25px 0;
+            min-width: 400px; 
+            border-radius: 5px 5px 10px 5px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            text-align: center;
+            display: grid; 
+            background-color: #fff;
+            font-weight: 500;
+        
+        }
+        
+        .tabela_principal thead tr {
+            background-color: #B02742;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        
+        .tabela_principal th,
+        .tabela_principal td {
+            padding: 10px 8px;
+            border-radius: 5px; 
+        
+        }
+        
+        .tabela_principal tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }

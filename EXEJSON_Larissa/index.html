@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <title>Exercicio JSON - ISW-008 </title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- Implemente uma função que receba uma lista de alunos de ISW-008 (nome, ra, notaP1, notaP2). 
+    Exemplo: {nome:"Diego", ra:"005083231101",notaP1:10,notaP2:8}
+Essa função deverá: 
+    a) Mostrar na tela os alunos.
+    b) Notas Menores que 6 em vermelho, maiores ou iguais em azul
+    c) A media da P1 da turma
+    d) A media da P2 da turma
+    e) A média de cada Aluno
+    f) A quantidades de aprovados
+    g) A quantidade de reprovados
+    h) Tudo em uma Tabela
+    -->
+    <main>
+        <h1 style="justify-content: center; display: flex;"> Alunos - ISW-008 </h1>
+    <div class="tabela_principal">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>RA</th>
+                    <th>nota A1 </th>
+                    <th>nota A2 </th>
+                    <th>Média </th>
+                    <th>Resultado</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="listaAlunos">
+            </tbody>
+        </table>
+    </div>
+</main>
+<div class="numero_aprovados">
+    <h2> Aprovados: <span id="aprovados"> </span></h2>
+    <h2> Reprovados: <span id="reprovados"></span></h2>
+    <!-- Essas médias são a média de notas dos alunos nas provas, tanto média da p1, quanto p2-->
+    <h2>Média da P1: <span id="mediaP1"></span></h2>
+    <h2>Média da P2: <span id="mediaP2"></span></h2>
+</div>
+
+
+    <script>
+        var infoAlunos = Alunos(); 
+       tabelaAlunos(infoAlunos); 
+    </script>
+</body>
+</html>
